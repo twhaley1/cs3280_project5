@@ -22,10 +22,12 @@ def set_properties(project):
     
 @task
 def scan_port_60000():
-    callArgs = ['python', 'src/main/python/portscan.py', '127.0.0.1', '60000']
+    pathToPortscan = os.path.join('src', 'main', 'python', 'portscan.py')
+    callArgs = ['python', pathToPortscan, '127.0.0.1', '60000']
     subprocess.call(callArgs)
     
 @task
 def scan_port_60000_to_60010():
-    callArgs = ['python', 'src/main/python/portscan.py', '127.0.0.1', '60000', '60010']
+    pathToPortscan = os.path.join('src', 'main', 'python', 'portscan.py')
+    callArgs = ['python', pathToPortscan, '127.0.0.1', '60000', '60010']
     subprocess.call(callArgs)
