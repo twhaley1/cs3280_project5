@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: cs3280-project5
+Version: 1.0
+Summary: Project for CS3280 : Scans ports
+Home-page: UNKNOWN
+Author: Thomas Whaley
+Author-email: twhaley1@my.westga.edu
+License: UNKNOWN
+Description:  Takes an ip address and a port or a pair
+                                      of ports and determines whether there the 
+                                      port is listening or not. 
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python

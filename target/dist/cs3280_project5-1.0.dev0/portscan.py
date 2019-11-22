@@ -12,7 +12,6 @@ def scan(ip, startPort, endPort = None):
     processQueue = multiprocessing.Queue(2 + endPort - startPort)
     for port in range(startPort, endPort + 1):
         process = multiprocessing.Process(target=detectPortStatus, args=(processQueue, ip, port))
-        process.daemon = True
         processes.append(process)
         print(f'Starting scan on Port: {port}\n')
         process.start()

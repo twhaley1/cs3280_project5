@@ -1,0 +1,35 @@
+running clean
+'build/lib' does not exist -- can't clean it
+'build/bdist.linux-x86_64' does not exist -- can't clean it
+'build/scripts-3.6' does not exist -- can't clean it
+running sdist
+running egg_info
+creating cs3280_project5.egg-info
+writing cs3280_project5.egg-info/PKG-INFO
+writing dependency_links to cs3280_project5.egg-info/dependency_links.txt
+writing namespace_packages to cs3280_project5.egg-info/namespace_packages.txt
+writing top-level names to cs3280_project5.egg-info/top_level.txt
+writing manifest file 'cs3280_project5.egg-info/SOURCES.txt'
+reading manifest file 'cs3280_project5.egg-info/SOURCES.txt'
+writing manifest file 'cs3280_project5.egg-info/SOURCES.txt'
+warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
+
+running check
+warning: check: missing required meta-data: url
+
+creating cs3280_project5-1.0
+creating cs3280_project5-1.0/cs3280_project5.egg-info
+copying files to cs3280_project5-1.0...
+copying portscan.py -> cs3280_project5-1.0
+copying setup.py -> cs3280_project5-1.0
+copying simpleservers.py -> cs3280_project5-1.0
+copying cs3280_project5.egg-info/PKG-INFO -> cs3280_project5-1.0/cs3280_project5.egg-info
+copying cs3280_project5.egg-info/SOURCES.txt -> cs3280_project5-1.0/cs3280_project5.egg-info
+copying cs3280_project5.egg-info/dependency_links.txt -> cs3280_project5-1.0/cs3280_project5.egg-info
+copying cs3280_project5.egg-info/namespace_packages.txt -> cs3280_project5-1.0/cs3280_project5.egg-info
+copying cs3280_project5.egg-info/top_level.txt -> cs3280_project5-1.0/cs3280_project5.egg-info
+copying cs3280_project5.egg-info/zip-safe -> cs3280_project5-1.0/cs3280_project5.egg-info
+Writing cs3280_project5-1.0/setup.cfg
+creating dist
+Creating tar archive
+removing 'cs3280_project5-1.0' (and everything under it)

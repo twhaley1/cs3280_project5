@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" file="portscan_scan_tests.py" name="portscan_scan_tests.TestScan-20191122150339" skipped="0" tests="3" time="0.294" timestamp="2019-11-22T15:03:40">
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="18" name="testShouldNotAllowMuchSmallerEndPort" time="0.097" timestamp="2019-11-22T15:03:40">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="14" name="testShouldNotAllowSmallerEndPort" time="0.072" timestamp="2019-11-22T15:03:40">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="22" name="testStartPortOnlyIsOpen" time="0.125" timestamp="2019-11-22T15:03:40">
+		<failure message="{50000: True} != {50000: False}
+- {50000: True}
++ {50000: False}" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/unittest/python/portscan_scan_tests.py", line 25, in testStartPortOnlyIsOpen
+    self.assertEqual(expected, result)
+AssertionError: {50000: True} != {50000: False}
+- {50000: True}
++ {50000: False}
+]]>		</failure>
+		<system-out>
+<![CDATA[Starting scan on Port: 50000
+
+
+Waiting on processes to conclude...
+
+Processes complete...
+
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+</testsuite>

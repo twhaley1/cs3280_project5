@@ -30,7 +30,10 @@ if __name__ == '__main__':
         scripts = [],
         packages = [],
         namespace_packages = [],
-        py_modules = ['portscan'],
+        py_modules = [
+            'portscan',
+            'simpleservers'
+        ],
         classifiers = [
             'Development Status :: 3 - Alpha',
             'Programming Language :: Python'

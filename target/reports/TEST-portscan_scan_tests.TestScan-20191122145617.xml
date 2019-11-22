@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" file="portscan_scan_tests.py" name="portscan_scan_tests.TestScan-20191122145617" skipped="0" tests="3" time="0.052" timestamp="2019-11-22T14:56:17">
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="20" name="testShouldNotAllowMuchSmallerEndPort" time="0.005" timestamp="2019-11-22T14:56:17">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="16" name="testShouldNotAllowSmallerEndPort" time="0.000" timestamp="2019-11-22T14:56:17">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="24" name="testStartPortOnlyIsOpen" time="0.047" timestamp="2019-11-22T14:56:17">
+		<error message="'TestScan' object has no attribute 'assertDictEquals'" type="AttributeError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/unittest/python/portscan_scan_tests.py", line 27, in testStartPortOnlyIsOpen
+    self.assertDictEquals(expected, result)
+AttributeError: 'TestScan' object has no attribute 'assertDictEquals'
+]]>		</error>
+		<system-out>
+<![CDATA[Starting scan on Port: 50000
+
+
+Waiting on processes to conclude...
+
+Processes complete...
+
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+</testsuite>

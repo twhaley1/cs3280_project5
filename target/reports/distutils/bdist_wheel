@@ -1,0 +1,39 @@
+running clean
+'build/lib' does not exist -- can't clean it
+'build/bdist.linux-x86_64' does not exist -- can't clean it
+'build/scripts-3.6' does not exist -- can't clean it
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+copying portscan.py -> build/lib
+copying simpleservers.py -> build/lib
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/wheel
+copying build/lib/portscan.py -> build/bdist.linux-x86_64/wheel
+copying build/lib/simpleservers.py -> build/bdist.linux-x86_64/wheel
+running install_egg_info
+running egg_info
+writing cs3280_project5.egg-info/PKG-INFO
+writing dependency_links to cs3280_project5.egg-info/dependency_links.txt
+writing namespace_packages to cs3280_project5.egg-info/namespace_packages.txt
+writing top-level names to cs3280_project5.egg-info/top_level.txt
+reading manifest file 'cs3280_project5.egg-info/SOURCES.txt'
+writing manifest file 'cs3280_project5.egg-info/SOURCES.txt'
+Copying cs3280_project5.egg-info to build/bdist.linux-x86_64/wheel/cs3280_project5-1.0.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/cs3280_project5-1.0.dist-info/WHEEL
+creating 'dist/cs3280_project5-1.0-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'portscan.py'
+adding 'simpleservers.py'
+adding 'cs3280_project5-1.0.dist-info/METADATA'
+adding 'cs3280_project5-1.0.dist-info/WHEEL'
+adding 'cs3280_project5-1.0.dist-info/namespace_packages.txt'
+adding 'cs3280_project5-1.0.dist-info/top_level.txt'
+adding 'cs3280_project5-1.0.dist-info/zip-safe'
+adding 'cs3280_project5-1.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" file="portscan_scan_tests.py" name="portscan_scan_tests.TestScan-20191122151225" skipped="0" tests="4" time="0.120" timestamp="2019-11-22T15:12:25">
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="20" name="testShouldNotAllowMuchSmallerEndPort" time="0.005" timestamp="2019-11-22T15:12:25">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="16" name="testShouldNotAllowSmallerEndPort" time="0.000" timestamp="2019-11-22T15:12:25">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="29" name="testStartPortOnlyIsNotOpen" time="0.058" timestamp="2019-11-22T15:12:25">
+		<system-out>
+<![CDATA[Starting scan on Port: 50005
+
+
+Waiting on processes to conclude...
+
+Processes complete...
+
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="24" name="testStartPortOnlyIsOpen" time="0.057" timestamp="2019-11-22T15:12:25">
+		<system-out>
+<![CDATA[Starting scan on Port: 50000
+
+
+Waiting on processes to conclude...
+
+Processes complete...
+
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+</testsuite>

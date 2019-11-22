@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" file="portscan_scan_tests.py" name="portscan_scan_tests.TestScan-20191122151210" skipped="0" tests="4" time="0.101" timestamp="2019-11-22T15:12:10">
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="20" name="testShouldNotAllowMuchSmallerEndPort" time="0.005" timestamp="2019-11-22T15:12:10">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="16" name="testShouldNotAllowSmallerEndPort" time="0.000" timestamp="2019-11-22T15:12:10">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="24" name="testStartPortOnlyIsOpen" time="0.046" timestamp="2019-11-22T15:12:10">
+		<system-out>
+<![CDATA[Starting scan on Port: 50000
+
+
+Waiting on processes to conclude...
+
+Processes complete...
+
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="29" name="testStartPortOnlyIsNotOpen" time="0.050" timestamp="2019-11-22T15:12:10">
+		<failure message="{50005: False} != {50000: True}
+- {50005: False}
++ {50000: True}" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/unittest/python/portscan_scan_tests.py", line 32, in testStartPortOnlyIsNotOpen
+    self.assertEqual(expected, result)
+AssertionError: {50005: False} != {50000: True}
+- {50005: False}
++ {50000: True}
+]]>		</failure>
+		<system-out>
+<![CDATA[Starting scan on Port: 50000
+
+
+Waiting on processes to conclude...
+
+Processes complete...
+
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+</testsuite>

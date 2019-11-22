@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="3" file="portscan_scan_tests.py" name="portscan_scan_tests.TestScan-20191122152151" skipped="0" tests="8" time="0.220" timestamp="2019-11-22T15:21:51">
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="20" name="testShouldNotAllowMuchSmallerEndPort" time="0.005" timestamp="2019-11-22T15:21:51">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="16" name="testShouldNotAllowSmallerEndPort" time="0.000" timestamp="2019-11-22T15:21:51">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="34" name="testStartAndEndPortIsOpenSizeTwo" time="0.018" timestamp="2019-11-22T15:21:51">
+		<system-out>
+<![CDATA[Starting scan on Port: 50000
+
+Starting scan on Port: 50001
+
+
+Waiting on processes to conclude...
+
+Processes complete...
+
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="29" name="testStartPortOnlyIsNotOpen" time="0.010" timestamp="2019-11-22T15:21:51">
+		<system-out>
+<![CDATA[Starting scan on Port: 50005
+
+
+Waiting on processes to conclude...
+
+Processes complete...
+
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="24" name="testStartPortOnlyIsOpen" time="0.008" timestamp="2019-11-22T15:21:51">
+		<system-out>
+<![CDATA[Starting scan on Port: 50000
+
+
+Waiting on processes to conclude...
+
+Processes complete...
+
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="49" name="testStartAndEndPortIsOpenSizeFive" time="0.083" timestamp="2019-11-22T15:21:51">
+		<failure message="{50000: True, 50001: True, 50002: True, 50003: True, 50004: True} != {50002: False, 50000: True, 50001: False, 50003: False, 50004: False}
+- {50000: True, 50001: True, 50002: True, 50003: True, 50004: True}
+?                      ^^^          ^^^          ^^^          ^^^
+
++ {50000: True, 50001: False, 50002: False, 50003: False, 50004: False}
+?                      ^^^^          ^^^^          ^^^^          ^^^^
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/unittest/python/portscan_scan_tests.py", line 52, in testStartAndEndPortIsOpenSizeFive
+    self.assertEqual(expected, result)
+AssertionError: {50000: True, 50001: True, 50002: True, 50003: True, 50004: True} != {50002: False, 50000: True, 50001: False, 50003: False, 50004: False}
+- {50000: True, 50001: True, 50002: True, 50003: True, 50004: True}
+?                      ^^^          ^^^          ^^^          ^^^
+
++ {50000: True, 50001: False, 50002: False, 50003: False, 50004: False}
+?                      ^^^^          ^^^^          ^^^^          ^^^^
+
+]]>		</failure>
+		<system-out>
+<![CDATA[Starting scan on Port: 50000
+
+Starting scan on Port: 50001
+
+Starting scan on Port: 50002
+
+Starting scan on Port: 50003
+
+Starting scan on Port: 50004
+
+
+Waiting on processes to conclude...
+
+Processes complete...
+
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="44" name="testStartAndEndPortIsOpenSizeFour" time="0.048" timestamp="2019-11-22T15:21:51">
+		<failure message="{50000: True, 50001: True, 50002: True, 50003: True} != {50000: True, 50002: False, 50001: False, 50003: False}
+- {50000: True, 50001: True, 50002: True, 50003: True}
+?                      ^^^          ^^^          ^^^
+
++ {50000: True, 50001: False, 50002: False, 50003: False}
+?                      ^^^^          ^^^^          ^^^^
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/unittest/python/portscan_scan_tests.py", line 47, in testStartAndEndPortIsOpenSizeFour
+    self.assertEqual(expected, result)
+AssertionError: {50000: True, 50001: True, 50002: True, 50003: True} != {50000: True, 50002: False, 50001: False, 50003: False}
+- {50000: True, 50001: True, 50002: True, 50003: True}
+?                      ^^^          ^^^          ^^^
+
++ {50000: True, 50001: False, 50002: False, 50003: False}
+?                      ^^^^          ^^^^          ^^^^
+
+]]>		</failure>
+		<system-out>
+<![CDATA[Starting scan on Port: 50000
+
+Starting scan on Port: 50001
+
+Starting scan on Port: 50002
+
+Starting scan on Port: 50003
+
+
+Waiting on processes to conclude...
+
+Processes complete...
+
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="39" name="testStartAndEndPortIsOpenSizeThree" time="0.047" timestamp="2019-11-22T15:21:51">
+		<failure message="{50000: True, 50001: True, 50002: True} != {50002: False, 50001: False, 50000: True}
+- {50000: True, 50001: True, 50002: True}
+?                      ^^^          ^^^
+
++ {50000: True, 50001: False, 50002: False}
+?                      ^^^^          ^^^^
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/unittest/python/portscan_scan_tests.py", line 42, in testStartAndEndPortIsOpenSizeThree
+    self.assertEqual(expected, result)
+AssertionError: {50000: True, 50001: True, 50002: True} != {50002: False, 50001: False, 50000: True}
+- {50000: True, 50001: True, 50002: True}
+?                      ^^^          ^^^
+
++ {50000: True, 50001: False, 50002: False}
+?                      ^^^^          ^^^^
+
+]]>		</failure>
+		<system-out>
+<![CDATA[Starting scan on Port: 50000
+
+Starting scan on Port: 50001
+
+Starting scan on Port: 50002
+
+
+Waiting on processes to conclude...
+
+Processes complete...
+
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+</testsuite>

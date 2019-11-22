@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" file="portscan_scan_tests.py" name="portscan_scan_tests.TestScan-20191122150736" skipped="0" tests="3" time="0.338" timestamp="2019-11-22T15:07:36">
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="18" name="testShouldNotAllowMuchSmallerEndPort" time="0.100" timestamp="2019-11-22T15:07:36">
+		<system-out>
+<![CDATA[<subprocess.Popen object at 0x7eff66d90b70>
+<subprocess.Popen object at 0x7eff66d90d30>
+<subprocess.Popen object at 0x7eff66d90b00>
+<subprocess.Popen object at 0x7eff66d90da0>
+<subprocess.Popen object at 0x7eff66d90c88>
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="14" name="testShouldNotAllowSmallerEndPort" time="0.089" timestamp="2019-11-22T15:07:36">
+		<system-out>
+<![CDATA[<subprocess.Popen object at 0x7eff66d90eb8>
+<subprocess.Popen object at 0x7eff66d90fd0>
+<subprocess.Popen object at 0x7eff66d90cc0>
+<subprocess.Popen object at 0x7eff66d90f98>
+<subprocess.Popen object at 0x7eff66d90e80>
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="22" name="testStartPortOnlyIsOpen" time="0.149" timestamp="2019-11-22T15:07:36">
+		<failure message="{50000: True} != {50000: False}
+- {50000: True}
++ {50000: False}" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/unittest/python/portscan_scan_tests.py", line 25, in testStartPortOnlyIsOpen
+    self.assertEqual(expected, result)
+AssertionError: {50000: True} != {50000: False}
+- {50000: True}
++ {50000: False}
+]]>		</failure>
+		<system-out>
+<![CDATA[<subprocess.Popen object at 0x7eff66d90da0>
+<subprocess.Popen object at 0x7eff66d90f98>
+<subprocess.Popen object at 0x7eff66d90eb8>
+<subprocess.Popen object at 0x7eff66d90fd0>
+<subprocess.Popen object at 0x7eff66d90e80>
+Starting scan on Port: 50000
+
+
+Waiting on processes to conclude...
+
+Processes complete...
+
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+</testsuite>

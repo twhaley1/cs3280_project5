@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" file="portscan_scan_tests.py" name="portscan_scan_tests.TestScan-20191122145238" skipped="0" tests="2" time="0.009" timestamp="2019-11-22T14:52:38">
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="20" name="testShouldNotAllowMuchSmallerEndPort" time="0.009" timestamp="2019-11-22T14:52:38">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="16" name="testShouldNotAllowSmallerEndPort" time="0.000" timestamp="2019-11-22T14:52:38">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+</testsuite>

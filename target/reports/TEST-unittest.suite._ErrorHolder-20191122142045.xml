@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" file="unittest/suite.py" name="unittest.suite._ErrorHolder-20191122142045" skipped="0" tests="1" time="0.000" timestamp="0001-01-01T00:00:00">
+	<testcase classname="setUpClass (portscan_scan_tests" name="TestScan)" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error message="an integer is required (got type str)" type="TypeError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/unittest/python/portscan_scan_tests.py", line 10, in setUpClass
+    cls.servers.serveAll()
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/main/python/simpleservers.py", line 10, in serveAll
+    for server in self.servers:
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/main/python/simpleservers.py", line 7, in <lambda>
+    self.servers = map(lambda port: socketserver.TCPServer(("127.0.0.1", str(port)), handler), ports)
+  File "/usr/lib/python3.6/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.6/socketserver.py", line 470, in server_bind
+    self.socket.bind(self.server_address)
+TypeError: an integer is required (got type str)
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+</testsuite>
