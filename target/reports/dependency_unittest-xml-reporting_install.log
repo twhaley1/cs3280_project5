@@ -1,0 +1,6 @@
+Collecting unittest-xml-reporting
+  Downloading https://files.pythonhosted.org/packages/f6/12/c3f1c15bef229c7258e1a151c7d634a8e4aaa6e29515f2f2d2b071a7580f/unittest_xml_reporting-2.5.2-py2.py3-none-any.whl
+Collecting six>=1.4.0 (from unittest-xml-reporting)
+  Downloading https://files.pythonhosted.org/packages/65/26/32b8464df2a97e6dd1b656ed26b2c194606c16fe163c695a992b36c11cdf/six-1.13.0-py2.py3-none-any.whl
+Installing collected packages: six, unittest-xml-reporting
+Successfully installed six-1.13.0 unittest-xml-reporting-2.5.2
