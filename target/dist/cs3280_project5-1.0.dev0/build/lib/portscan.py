@@ -8,26 +8,36 @@ def scan(ip, startPort, endPort = None):
     if endPort < startPort:
         raise ValueError
         
-    processes = []
     processQueue = multiprocessing.Queue(2 + endPort - startPort)
-    for port in range(startPort, endPort + 1):
-        process = multiprocessing.Process(target=detectPortStatus, args=(processQueue, ip, port))
-        processes.append(process)
-        print(f'Starting scan on Port: {port}\n')
-        process.start()
+    print('------------------------------------------------------------')
+    processes = startProcesses(processQueue, ip, startPort, endPort)
+    waitForProcesses(processQueue, processes)
+    print('------------------------------------------------------------')
     
-    print('\nWaiting on processes to conclude...\n')
+    return getPortDictionary(processQueue)
+    
+def startProcesses(queue, ip, startPort, endPort):
+    processes = []
+    for port in range(startPort, endPort + 1):
+        process = multiprocessing.Process(target=detectPortStatus, args=(queue, ip, port))
+        processes.append(process)
+        print(f'Starting scan on Port: {port}')
+        process.start()
+    return processes
+        
+def waitForProcesses(queue, processes):
+    print('\nWaiting on processes to conclude...')
     for process in processes:
         process.join()
     print('Processes complete...\n')
-    processQueue.put(None)
+    queue.put(None)
     
+def getPortDictionary(queue):
     statusDictionary = {}
-    for queueContent in iter(processQueue.get, None):
+    for queueContent in iter(queue.get, None):
         statusDictionary[queueContent[0]] = queueContent[1]
-        
     return statusDictionary
-    
+
 def detectPortStatus(output, ip, port):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = sock.connect_ex((ip, port))

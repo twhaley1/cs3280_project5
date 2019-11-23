@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="8" failures="0" file="portscan_scan_tests.py" name="portscan_scan_tests.TestScan-20191122190507" skipped="0" tests="10" time="0.039" timestamp="2019-11-22T19:05:12">
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="20" name="testShouldNotAllowMuchSmallerEndPort" time="0.022" timestamp="2019-11-22T19:05:12">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="16" name="testShouldNotAllowSmallerEndPort" time="0.001" timestamp="2019-11-22T19:05:12">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="59" name="testStartAndEndPortHalfOpenHalfClosed" time="0.007" timestamp="2019-11-22T19:05:12">
+		<error message="name 'processes' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/unittest/python/portscan_scan_tests.py", line 60, in testStartAndEndPortHalfOpenHalfClosed
+    result = portscan.scan('127.0.0.1', 50000, 50010)
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/main/python/portscan.py", line 15, in scan
+    startProcesses(processQueue, ip, startPort, endPort)
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/main/python/portscan.py", line 24, in startProcesses
+    processes.append(process)
+NameError: name 'processes' is not defined
+]]>		</error>
+		<system-out>
+<![CDATA[------------------------------------------------------------
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="49" name="testStartAndEndPortIsOpenSizeFive" time="0.002" timestamp="2019-11-22T19:05:12">
+		<error message="name 'processes' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/unittest/python/portscan_scan_tests.py", line 50, in testStartAndEndPortIsOpenSizeFive
+    result = portscan.scan('127.0.0.1', 50000, 50004)
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/main/python/portscan.py", line 15, in scan
+    startProcesses(processQueue, ip, startPort, endPort)
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/main/python/portscan.py", line 24, in startProcesses
+    processes.append(process)
+NameError: name 'processes' is not defined
+]]>		</error>
+		<system-out>
+<![CDATA[------------------------------------------------------------
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="44" name="testStartAndEndPortIsOpenSizeFour" time="0.001" timestamp="2019-11-22T19:05:12">
+		<error message="name 'processes' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/unittest/python/portscan_scan_tests.py", line 45, in testStartAndEndPortIsOpenSizeFour
+    result = portscan.scan('127.0.0.1', 50000, 50003)
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/main/python/portscan.py", line 15, in scan
+    startProcesses(processQueue, ip, startPort, endPort)
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/main/python/portscan.py", line 24, in startProcesses
+    processes.append(process)
+NameError: name 'processes' is not defined
+]]>		</error>
+		<system-out>
+<![CDATA[------------------------------------------------------------
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="54" name="testStartAndEndPortIsOpenSizeSixWithOneNotOpen" time="0.001" timestamp="2019-11-22T19:05:12">
+		<error message="name 'processes' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/unittest/python/portscan_scan_tests.py", line 55, in testStartAndEndPortIsOpenSizeSixWithOneNotOpen
+    result = portscan.scan('127.0.0.1', 50000, 50005)
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/main/python/portscan.py", line 15, in scan
+    startProcesses(processQueue, ip, startPort, endPort)
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/main/python/portscan.py", line 24, in startProcesses
+    processes.append(process)
+NameError: name 'processes' is not defined
+]]>		</error>
+		<system-out>
+<![CDATA[------------------------------------------------------------
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="39" name="testStartAndEndPortIsOpenSizeThree" time="0.001" timestamp="2019-11-22T19:05:12">
+		<error message="name 'processes' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/unittest/python/portscan_scan_tests.py", line 40, in testStartAndEndPortIsOpenSizeThree
+    result = portscan.scan('127.0.0.1', 50000, 50002)
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/main/python/portscan.py", line 15, in scan
+    startProcesses(processQueue, ip, startPort, endPort)
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/main/python/portscan.py", line 24, in startProcesses
+    processes.append(process)
+NameError: name 'processes' is not defined
+]]>		</error>
+		<system-out>
+<![CDATA[------------------------------------------------------------
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="34" name="testStartAndEndPortIsOpenSizeTwo" time="0.001" timestamp="2019-11-22T19:05:12">
+		<error message="name 'processes' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/unittest/python/portscan_scan_tests.py", line 35, in testStartAndEndPortIsOpenSizeTwo
+    result = portscan.scan('127.0.0.1', 50000, 50001)
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/main/python/portscan.py", line 15, in scan
+    startProcesses(processQueue, ip, startPort, endPort)
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/main/python/portscan.py", line 24, in startProcesses
+    processes.append(process)
+NameError: name 'processes' is not defined
+]]>		</error>
+		<system-out>
+<![CDATA[------------------------------------------------------------
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="29" name="testStartPortOnlyIsNotOpen" time="0.001" timestamp="2019-11-22T19:05:12">
+		<error message="name 'processes' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/unittest/python/portscan_scan_tests.py", line 30, in testStartPortOnlyIsNotOpen
+    result = portscan.scan('127.0.0.1', 50005)
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/main/python/portscan.py", line 15, in scan
+    startProcesses(processQueue, ip, startPort, endPort)
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/main/python/portscan.py", line 24, in startProcesses
+    processes.append(process)
+NameError: name 'processes' is not defined
+]]>		</error>
+		<system-out>
+<![CDATA[------------------------------------------------------------
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="portscan_scan_tests.TestScan" file="src/unittest/python/portscan_scan_tests.py" line="24" name="testStartPortOnlyIsOpen" time="0.001" timestamp="2019-11-22T19:05:12">
+		<error message="name 'processes' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/unittest/python/portscan_scan_tests.py", line 25, in testStartPortOnlyIsOpen
+    result = portscan.scan('127.0.0.1', 50000)
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/main/python/portscan.py", line 15, in scan
+    startProcesses(processQueue, ip, startPort, endPort)
+  File "/home/student/Documents/cs3280/projects/cs3280_project5/src/main/python/portscan.py", line 24, in startProcesses
+    processes.append(process)
+NameError: name 'processes' is not defined
+]]>		</error>
+		<system-out>
+<![CDATA[------------------------------------------------------------
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+</testsuite>

@@ -1,6 +1,6 @@
 Name               Stmts   Miss Branch BrPart  Cover
 ----------------------------------------------------
-portscan.py           47     14     24      1    65%
+portscan.py           56     14     24      1    69%
 simpleservers.py      13      0      4      0   100%
 ----------------------------------------------------
-TOTAL                 60     14     28      1    72%
+TOTAL                 69     14     28      1    74%
